@@ -1,0 +1,366 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Poiret";
+    src: url("fonts/PoiretOne-Regular.ttf");
+}
+ 
+
+@font-face {
+    font-family: "Kaushan";
+    src: url("fonts/KaushanScript-Regular.ttf")
+    }
+
+
+@keyframes transition-a {
+
+    from {
+      opacity: 0;
+      transform: rotateY(-100deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+
+@keyframes transition-b { 
+
+    0% {
+        opacity:0;
+        transform:  translate(300px,0px)  skewX(-30deg) ;
+      }
+      60% {
+        opacity:1;
+        transform:  translate(-40px,0px)  skewX(30deg) ;
+      }
+      80% {
+        opacity:1;
+        transform:  translate(0px,0px)  skewX(-15deg) ;
+      }
+      100% {
+        opacity:1;
+        transform:  translate(0px,0px)  skewX(0deg) ;
+      }
+}
+
+
+@keyframes transition-c {
+    0% {
+        opacity:0;
+        transform:  translate(0px,-25px)  ;
+      }
+      100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+      }
+    }
+
+
+body {
+    background-color: #e0e0e0;
+}    
+
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #404040;
+    height: 80px; 
+}
+
+
+nav p {
+    position: fixed;
+    font-family: "Kaushan";
+    margin-left: 300px;
+    font-size: 50px;
+    color: ghostwhite;
+}
+
+
+nav a:hover {
+    color: #9999ff;
+}
+
+
+#list1 {
+    font-family: "Poiret";
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    margin-left: 800px;
+    margin-top: 30px;
+}
+
+
+#list1 li {
+    margin-left: 100px;
+}
+
+
+#list2, #list3 {
+    font-family: "Poiret";
+    font-size: 30px;
+    margin-left: 400px;
+}
+
+
+
+#list2 li, #list3 li {
+    list-style: none;
+    display: inline-block
+}
+
+
+#img0 {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+
+#wrapper-1 {
+    width: 100%;
+    padding-top: 280px;
+    animation: transition-a 1s;
+}
+
+
+#wrapper-2 {
+    width: 100%;
+    padding-top: 180px;
+    animation: transition-b 1s;
+}
+
+
+#wrapper-3 {
+    width: 100%;
+    padding-top: 180px;
+    animation: transition-c 1s;
+}
+
+
+
+.a1 {
+    display: inline-block;
+    margin-left: 200px;
+}
+
+
+.a2 {
+    display: inline-block;
+}
+
+
+.a3 {
+    display: inline-block;
+}
+
+
+#aboutme {
+    width: 800px;
+}
+
+
+#aboutme p {
+    font-family: "Poiret";
+    font-size: 30px;
+    
+}
+
+
+#aboutme strong {
+    font-family: "Poiret";
+    font-size: 50px;
+}
+
+
+#img1 {
+    width: 250px;
+    height: 250px;
+}
+
+
+#img2 {
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+}
+
+
+#img3 {
+    width: 230px;
+    height: 230px;
+    margin-left: 65px;
+}
+
+
+#img4 {
+    width: 230px;
+    height: 230px;
+    margin-left: 80px;
+}
+
+
+#img5 {
+    width: 250px;
+    height: 250px;
+}
+
+#img6 {
+    width: 58px;
+    height: 58px; 
+}
+
+#img7 {
+    width: 58px;
+    height: 58px;  
+}
+
+
+#tech {
+    width: 800px;
+}
+
+
+#tech-title{
+    font-family: "Poiret";
+    font-size: 70px;
+    margin-left: 200px;
+}
+
+
+#tech p {
+    font-family: "Poiret";
+    font-size: 30px;
+    margin-left: 300px;
+    width: 800px;
+}
+
+
+#contact-title {
+    text-align: left;
+    font-family: "Poiret";
+    font-size: 70px;
+    margin-left: 200px;
+}
+
+
+#imgs {
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
+#imgs hr {
+  width: 1000px;
+  margin-left: 200px;
+}
+
+
+#limg { 
+    width: 50px;
+    height: 50px;
+}
+
+
+#limg:hover {
+    transform: scale(1.5);
+}
+
+
+#gimg {
+    width: 45px;
+    height: 45px;
+}
+
+
+#gimg:hover {
+    transform: scale(1.5);
+}
+
+
+#link-a {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+#link-b {
+    margin-left: 25px;
+    margin-top: 22px;
+}
+
+
+#language {
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+form {
+    padding: 25px;
+    margin: 25px; 
+    margin-left: 350px;
+    background-image: url("img/message.png");  
+    height: 450px;
+    width: 500px;
+    border: 1px black solid;
+    border-radius: 10%;
+    font-family: "Poiret";
+    font-size: 20px;
+    color: #404040;
+}
+
+
+input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+    
+    
+input::placeholder {
+    color: #666;
+}
+
+        
+button {
+    width: 25%;
+    padding: 10px;
+    margin-left: 150px;
+    border: 1px solid ghostwhite;
+    border-radius: 10px;
+    font-family: "Poiret";
+    font-size: 16px;
+    font-weight: 400;
+    color: ghostwhite;
+    background-color: black;
+}
+
+
+#line {
+    border-right: 1px solid black;
+    height: 500px;
+    margin-left: 30px;
+}
